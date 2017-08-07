@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+
 import picture from './picture.png';
 import mailIcon from './mail.svg';
 import githubIcon from './github.svg';
 import linkedinIcon from './linkedin.svg';
 import './App.css';
+
 
 class App extends Component {
   render() {
@@ -47,6 +50,23 @@ class App extends Component {
             If it is not documented, then it’s not ready.
             And I try as much as possible to teach that when I’m mentoring my teammates.
           </p>
+          <Tabs defaultIndex={-1} selectedTabClassName="tab-link--selected">
+            <TabList className="tab-list">
+              <Tab className="tab-link">Work</Tab>
+              <Tab className="tab-link">Education</Tab>
+              <Tab className="tab-link">Skills</Tab>
+            </TabList>
+
+            <TabPanel>
+              <p>work content</p>
+            </TabPanel>
+            <TabPanel>
+              <p>education content</p>
+            </TabPanel>
+            <TabPanel>
+              <p>skills content</p>
+            </TabPanel>
+          </Tabs>
         </div>
       </div>
     );
