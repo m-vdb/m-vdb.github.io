@@ -5,10 +5,11 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-scripts": "1.0.10"
+    "react-scripts": "1.0.10",
+    "react-tabs": "^1.1.0"
   },
-  "engines" : {
-    "node" : ">=6.0.0 <7.0"
+  "engines": {
+    "node": ">=6.0.0 <7.0"
   },
   "scripts": {
     "start": "react-scripts start",
