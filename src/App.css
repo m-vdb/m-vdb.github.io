@@ -47,8 +47,8 @@ small {
 }
 
 .header-picture {
-  height: 200px;
-  border-radius: 100px;
+  height: 160px;
+  border-radius: 80px;
 }
 
 /* Header links */
@@ -79,6 +79,12 @@ small {
   width: 30px;
 }
 
+/* Intro */
+
+.intro {
+  margin: 2em 0;
+}
+
 /* Main content */
 
 .content {
@@ -97,7 +103,7 @@ small {
   list-style: none;
   display: inline-block;
   border: 1px solid #287eff;
-  padding: 6px;
+  padding: 10px 30px;
   cursor: pointer;
   color: #287eff;
   background-color: #ffffff;
