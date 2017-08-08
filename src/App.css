@@ -1,8 +1,43 @@
-/* Header */
+/* Font-size */
+h1 {
+  font-size: 5.0em;
+  font-weight: lighter;
+}
 
 h2 {
-  font-size: 1.7em;
+  font-size: 4.0em;
+  font-weight: lighter;
 }
+
+h3 {
+  font-size: 3.0em;
+  font-weight: lighter;
+}
+
+h4 {
+  font-size: 2.0em;
+  font-weight: lighter;
+}
+
+blockquote {
+  font-size: 1.5em;
+}
+
+p {
+  font-size: 1.25em;
+  font-family: "Raleway";
+}
+
+input {
+  font-size: 1.0em;
+}
+
+small {
+  font-size: 0.75em;
+}
+
+
+/* Header */
 
 .header {
   background-color: #287eff;
@@ -42,12 +77,6 @@ h2 {
 
 .link-icon.link-icon-email {
   width: 30px;
-}
-
-/* Intro */
-
-.intro {
-  font-size: 1em;
 }
 
 /* Main content */
