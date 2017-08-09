@@ -41,21 +41,23 @@ class App extends Component {
           </p>
         </div>
         <div className="content">
-          <p className="intro">
-            I’m a passionate full-stack software engineer.
-            Building projects with purpose drives me.
-            I’m a fast learner and a doer who is not afraid of quickly bootstrapping code to embrace changes.
-            Rigor is my leitmotiv: if my code is not tested, then it’s not ready.
-            If it is not documented, then it’s not ready.
-            I’m ready for my next challenge. 🚀
-          </p>
-          <Tabs defaultIndex={-1} selectedTabClassName="tab-link--selected">
+          <Tabs selectedTabClassName="tab-link--selected">
             <TabList className="tab-list">
+              <Tab className="tab-link">About Me</Tab>
               <Tab className="tab-link">Work</Tab>
               <Tab className="tab-link">Education</Tab>
-              <Tab className="tab-link">Skills</Tab>
             </TabList>
 
+            <TabPanel>
+              <p>
+                I’m a passionate full-stack software engineer.
+                Building projects with purpose drives me.
+                I’m a fast learner and a doer who is not afraid of quickly bootstrapping code to embrace changes.
+                Rigor is my leitmotiv: if my code is not tested, then it’s not ready.
+                If it is not documented, then it’s not ready.
+                I’m ready for my next challenge. 🚀
+              </p>
+            </TabPanel>
             <TabPanel>
               <section>
                 <h5>
@@ -117,9 +119,6 @@ class App extends Component {
                 <h5 className="title-less-margin">Engineer Diploma, Computer Science</h5>
                 <p><a href="https://www.telecom-paristech.fr/eng">Telecom ParisTech</a> - Sep. 2011 / Sep. 2012</p>
               </section>
-            </TabPanel>
-            <TabPanel>
-              <p>skills content</p>
             </TabPanel>
           </Tabs>
         </div>
