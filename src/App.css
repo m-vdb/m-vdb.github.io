@@ -1,4 +1,4 @@
-/* Font-size */
+/* Common */
 h1 {
   font-size: 5.0em;
   font-weight: lighter;
@@ -16,6 +16,11 @@ h3 {
 
 h4 {
   font-size: 2.0em;
+  font-weight: lighter;
+}
+
+h5 {
+  font-size: 1.8em;
   font-weight: lighter;
 }
 
@@ -37,6 +42,10 @@ small {
   font-size: 0.75em;
 }
 
+a, a:visited, a:active {
+  color: #287eff;
+  text-decoration: none;
+}
 
 /* Header */
 
@@ -133,4 +142,10 @@ h2 {
 .tab-list .tab-link.tab-link--selected {
   background-color: #287eff;
   color: #ffffff;
+}
+
+/* Work section */
+p.stack {
+  font-style: italic;
+  font-size: 1.2em;
 }
