@@ -115,7 +115,7 @@ class App extends Component {
               </section>
               <section>
                 <h5 className="title-less-margin">Engineer Diploma, Computer Science</h5>
-                <p><a href="https://www.telecom-paristech.fr">Telecom ParisTech</a> - Sep. 2011 / Sep. 2012</p>
+                <p><a href="https://www.telecom-paristech.fr/eng">Telecom ParisTech</a> - Sep. 2011 / Sep. 2012</p>
               </section>
             </TabPanel>
             <TabPanel>
