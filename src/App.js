@@ -57,7 +57,56 @@ class App extends Component {
             </TabList>
 
             <TabPanel>
-              <p>work content</p>
+              <section>
+                <h5>
+                  Lead Software Architect - <a href="https://www.work4labs.com/">Work4</a> -
+                  Aug. 2012 / Oct. 2017 - San Francisco
+                </h5>
+                <p>
+                  We built the future of recruiting on social networks.
+                  I worked 5 years as a full-time employee and as my experience grew,
+                  I took more responsibilities, reaching the role of lead software architect.
+                  I crafted and supervised a web stack serving 1M monthly active users.
+                  I collaborated with and mentored a team of 5+ engineers,
+                  while closely brainstorming and building user experiences with the product team.
+                </p>
+                <p className="stack">
+                  Stack: Python, Django, MySQL, MongoDB, ElasticSearch, Redis,
+                  Celery, Chef, Gherkin testing, Redshift, AWS.
+                </p>
+              </section>
+              <section>
+                <h5>
+                  Co-Founder - <a href="https://github.com/m-vdb/getethic.com">Ethic</a> -
+                  May 2015 / Apr. 2016 - San Francisco
+                </h5>
+                <p>
+                  We created a blockchain-based insurance product with the very early-stage Ethereum technology.
+                  I was responsible for the product elaboration and the engineering conception.
+                  Building a product on top of Ethereum was very interesting and challenging.
+                  The project ended because of different life trajectories
+                  (my co-founder wanted to go back to Europe).
+                </p>
+                <p className="stack">
+                  Stack: NodeJS, Marionette, CoffeeScript, MongoDB, Redis, Solidity, Docker.
+                </p>
+              </section>
+              <section>
+                <h5>
+                  Co-Founder - <a href="https://houseofgigs.io">House of gigs</a> -
+                  Jun. 2016 / Now - San Francisco
+                </h5>
+                <p>
+                  We are building a platform that brings gig-economy workers together,
+                  help them find new opportunities and provide them with tailored services.
+                  I am responsible for the product development and engineering.
+                  I also take part in a lot of founder-specific tasks such as user acquisition and retention.
+                  The iOS app is available on the <a href="https://itunes.apple.com/app/id1160097877">US App store</a>.
+                </p>
+                <p className="stack">
+                  Stack: Python, Django, React Native, Dokku, PostgreSQL, Redis, Realm, Algolia, AWS, Datadog, Sentry.
+                </p>
+              </section>
             </TabPanel>
             <TabPanel>
               <p>education content</p>
