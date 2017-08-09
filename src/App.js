@@ -109,7 +109,14 @@ class App extends Component {
               </section>
             </TabPanel>
             <TabPanel>
-              <p>education content</p>
+              <section>
+                <h5 className="title-less-margin">Master of Science, Networks and Communication</h5>
+                <p><a href="https://www.polytechnique.edu/en">Ecole Polytechnique</a> - Sep. 2008 / Sep. 2012</p>
+              </section>
+              <section>
+                <h5 className="title-less-margin">Engineer Diploma, Computer Science</h5>
+                <p><a href="https://www.telecom-paristech.fr">Telecom ParisTech</a> - Sep. 2011 / Sep. 2012</p>
+              </section>
             </TabPanel>
             <TabPanel>
               <p>skills content</p>

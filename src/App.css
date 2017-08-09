@@ -47,6 +47,10 @@ a, a:visited, a:active {
   text-decoration: none;
 }
 
+.title-less-margin {
+  margin-bottom: 0;
+}
+
 /* Header */
 
 h2 {
