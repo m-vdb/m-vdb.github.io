@@ -5,6 +5,7 @@ import picture from './picture.png';
 import mailIcon from './mail.svg';
 import githubIcon from './github.svg';
 import linkedinIcon from './linkedin.svg';
+import { profileLinks, workLinks, educationLinks } from './links';
 import './App.css';
 
 
@@ -16,17 +17,17 @@ class App extends Component {
           <div className="links">
             <ul>
               <li>
-                <a href="mailto:getmax0@gmail.com">
+                <a href={profileLinks.email}>
                   <img src={mailIcon} alt="Contact me" className="link-icon link-icon-email" />
                 </a>
               </li>
               <li>
-                <a href="https://github.com/m-vdb">
+                <a href={profileLinks.github}>
                   <img src={githubIcon} alt="Github" className="link-icon" />
                 </a>
               </li>
               <li>
-                <a href="https://linkd.in/1alUxp3">
+                <a href={profileLinks.linkedin}>
                   <img src={linkedinIcon} alt="LinkedIn" className="link-icon" />
                 </a>
               </li>
@@ -63,7 +64,7 @@ class App extends Component {
             <TabPanel>
               <section>
                 <h5>
-                  Lead Software Architect - <a href="https://www.work4labs.com/">Work4</a> -
+                  Lead Software Architect - <a href={workLinks.work4}>Work4</a> -
                   Aug. 2012 / Oct. 2017 - San Francisco
                 </h5>
                 <p>
@@ -81,7 +82,7 @@ class App extends Component {
               </section>
               <section>
                 <h5>
-                  Co-Founder - <a href="https://github.com/m-vdb/getethic.com">Ethic</a> -
+                  Co-Founder - <a href={workLinks.ethic}>Ethic</a> -
                   May 2015 / Apr. 2016 - San Francisco
                 </h5>
                 <p>
@@ -97,7 +98,7 @@ class App extends Component {
               </section>
               <section>
                 <h5>
-                  Co-Founder - <a href="https://houseofgigs.io">House of gigs</a> -
+                  Co-Founder - <a href={workLinks.houseofgigs}>House of gigs</a> -
                   Jun. 2016 / Now - San Francisco
                 </h5>
                 <p>
@@ -105,7 +106,7 @@ class App extends Component {
                   help them find new opportunities and provide them with tailored services.
                   I am responsible for the product development and engineering.
                   I also take part in a lot of founder-specific tasks such as user acquisition and retention.
-                  The iOS app is available on the <a href="https://itunes.apple.com/app/id1160097877">US App store</a>.
+                  The iOS app is available on the <a href={workLinks.houseofgigsApp}>US App store</a>.
                 </p>
                 <p className="stack">
                   Stack: Python, Django, React Native, Dokku, PostgreSQL, Redis, Realm, Algolia, AWS, Datadog, Sentry.
@@ -115,11 +116,11 @@ class App extends Component {
             <TabPanel>
               <section>
                 <h5 className="title-less-margin">Master of Science, Networks and Communication</h5>
-                <p><a href="https://www.polytechnique.edu/en">Ecole Polytechnique</a> - Sep. 2008 / Sep. 2012</p>
+                <p><a href={educationLinks.x}>Ecole Polytechnique</a> - Sep. 2008 / Sep. 2012</p>
               </section>
               <section>
                 <h5 className="title-less-margin">Engineer Diploma, Computer Science</h5>
-                <p><a href="https://www.telecom-paristech.fr/eng">Telecom ParisTech</a> - Sep. 2011 / Sep. 2012</p>
+                <p><a href={educationLinks.telecom}>Telecom ParisTech</a> - Sep. 2011 / Sep. 2012</p>
               </section>
             </TabPanel>
           </Tabs>
