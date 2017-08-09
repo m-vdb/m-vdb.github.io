@@ -24,7 +24,8 @@ blockquote {
 }
 
 p {
-  font-size: 1.25em;
+  font-size: 1.5em;
+  line-height: 1.5em;
   font-family: "Raleway";
 }
 
@@ -38,6 +39,10 @@ small {
 
 
 /* Header */
+
+h2 {
+  margin: 20px 0;
+}
 
 .header {
   background-color: #287eff;
