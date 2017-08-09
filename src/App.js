@@ -33,22 +33,21 @@ class App extends Component {
             </ul>
           </div>
           <img src={picture} className="header-picture" alt="Me" />
-          <h2>Hello I'm Maxime</h2>
+          <h2>Hello I'm Max</h2>
           <p>
-            I'm looking for a full-time Software Engineer position <br/>
-            in Berlin, Germany<br/>
-            or remote, starting November 2017.
+            Looking for a full-time Software Engineer position <br/>
+            in <strong>Berlin, Germany</strong> or remote<br/>
+            starting <strong>November 2017</strong>.
           </p>
         </div>
         <div className="content">
           <p className="intro">
-            I’m a full-stack software engineer passionate about his work.
-            I love building people-centric products with daily impact on lives, jobs, etc…
+            I’m a passionate full-stack software engineer.
+            Building projects with purpose drives me.
             I’m a fast learner and a doer who is not afraid of quickly bootstrapping code to embrace changes.
-            I have experience with both smaller (&lt;5) and bigger (&gt;10) teams, and thrive in cross-team projects.
             Rigor is my leitmotiv: if my code is not tested, then it’s not ready.
             If it is not documented, then it’s not ready.
-            And I try as much as possible to teach that when I’m mentoring my teammates.
+            I’m ready for my next challenge. 🚀
           </p>
           <Tabs defaultIndex={-1} selectedTabClassName="tab-link--selected">
             <TabList className="tab-list">
