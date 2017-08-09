@@ -49,14 +49,16 @@ class App extends Component {
             </TabList>
 
             <TabPanel>
-              <p>
-                I’m a passionate full-stack software engineer.
-                Building projects with purpose drives me.
-                I’m a fast learner and a doer who is not afraid of quickly bootstrapping code to embrace changes.
-                Rigor is my leitmotiv: if my code is not tested, then it’s not ready.
-                If it is not documented, then it’s not ready.
-                I’m ready for my next challenge. 🚀
-              </p>
+              <section>
+                <p>
+                  I’m a passionate full-stack software engineer.
+                  Building projects with purpose drives me.
+                  I’m a fast learner and a doer who is not afraid of quickly bootstrapping code to embrace changes.
+                  Rigor is my leitmotiv: if my code is not tested, then it’s not ready.
+                  If it is not documented, then it’s not ready.
+                  I’m ready for my next challenge. 🚀
+                </p>
+              </section>
             </TabPanel>
             <TabPanel>
               <section>
