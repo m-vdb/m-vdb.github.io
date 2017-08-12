@@ -5,6 +5,7 @@ import picture from './picture.png';
 import mailIcon from './mail.svg';
 import githubIcon from './github.svg';
 import linkedinIcon from './linkedin.svg';
+import arrow from './arrow.svg';
 import { profileLinks, workLinks, educationLinks } from './links';
 import './App.css';
 
@@ -13,33 +14,38 @@ class App extends Component {
   render() {
     return (
       <div className="main">
-        <div className="header">
-          <div className="links">
-            <ul>
-              <li>
-                <a href={profileLinks.email}>
-                  <img src={mailIcon} alt="Contact me" className="link-icon link-icon-email" />
-                </a>
-              </li>
-              <li>
-                <a href={profileLinks.github}>
-                  <img src={githubIcon} alt="Github" className="link-icon" />
-                </a>
-              </li>
-              <li>
-                <a href={profileLinks.linkedin}>
-                  <img src={linkedinIcon} alt="LinkedIn" className="link-icon" />
-                </a>
-              </li>
-            </ul>
+        <div className="header-background">
+          <div className="header">
+            <div className="links">
+              <ul>
+                <li>
+                  <a href={profileLinks.email}>
+                    <img src={mailIcon} alt="Contact me" className="link-icon link-icon-email" />
+                  </a>
+                </li>
+                <li>
+                  <a href={profileLinks.github}>
+                    <img src={githubIcon} alt="Github" className="link-icon" />
+                  </a>
+                </li>
+                <li>
+                  <a href={profileLinks.linkedin}>
+                    <img src={linkedinIcon} alt="LinkedIn" className="link-icon" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <img src={picture} className="header-picture" alt="Me" />
+            <h2>Hello I'm Max</h2>
+            <p>
+              Looking for a full-time Software Engineer position <br/>
+              in <strong>Berlin, Germany</strong> or remote<br/>
+              starting <strong>November 2017</strong>.
+            </p>
+            <a href="#" className="header-arrow-container">
+              <img src={arrow} className="header-arrow" />
+            </a>
           </div>
-          <img src={picture} className="header-picture" alt="Me" />
-          <h2>Hello I'm Max</h2>
-          <p>
-            Looking for a full-time Software Engineer position <br/>
-            in <strong>Berlin, Germany</strong> or remote<br/>
-            starting <strong>November 2017</strong>.
-          </p>
         </div>
         <div className="content">
           <Tabs selectedTabClassName="tab-link--selected">

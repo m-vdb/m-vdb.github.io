@@ -57,8 +57,13 @@ h2 {
   margin: 20px 0;
 }
 
-.header {
+.header-background {
   background-color: #287eff;
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
   padding: 20px;
   color: white;
   text-align: center;
@@ -67,6 +72,17 @@ h2 {
 .header-picture {
   height: 160px;
   border-radius: 80px;
+  margin-top: 50px;
+}
+
+.header-arrow-container {
+  position: absolute;
+  bottom: 0;
+  margin-left: -35px;  /* .header-arrow.width / 2 */
+}
+
+.header-arrow {
+  width: 70px;
 }
 
 /* Header links */
@@ -102,6 +118,7 @@ h2 {
 .content {
   margin: 1% 20% 1%;
   text-align: justify;
+  min-height: 100vh;
 }
 
 /* Tabs */
@@ -146,4 +163,8 @@ h2 {
 p.stack {
   font-style: italic;
   font-size: 1.2em;
+}
+
+span.emphasis {
+  color: #287eff;
 }
