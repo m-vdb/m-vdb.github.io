@@ -22,7 +22,7 @@ class App extends Component {
               starting <strong>November 2017</strong>.
             </p>
             <a href="#" className="header-arrow-container">
-              <img src={arrow} className="header-arrow" />
+              <img src={arrow} className="header-arrow" alt="Arrow" />
             </a>
           </div>
         </div>

@@ -30,7 +30,7 @@ class TabBar extends ScrollListenerComponent {
               I’m a fast learner and a doer who is not afraid of quickly bootstrapping code to embrace changes.
               Rigor is my leitmotiv: if my code is not tested, then it’s not ready.
               If it is not documented, then it’s not ready.
-              I’m ready for my next challenge. 🚀
+              I’m ready for my next challenge. <span role="img" aria-label="Rocket">🚀</span>
             </p>
           </section>
         </TabPanel>
