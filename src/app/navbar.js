@@ -1,61 +1,28 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import { profileLinks } from './constants';
+import { ScrollListenerComponent } from './utils';
 import mailIcon from '../img/mail.svg';
 import githubIcon from '../img/github.svg';
 import linkedinIcon from '../img/linkedin.svg';
 
-class NavBar extends Component {
-
-  SCROLL_INTERVAL = 100;  // every 100ms
+class NavBar extends ScrollListenerComponent {
 
   constructor(props) {
     super(props);
-    this.onScroll = this.onScroll.bind(this);
-    this.handleScroll = this.handleScroll.bind(this);
-    this.state = {
-      scrolling: false,
-      scrolledPast: false,
+    this.state.className = 'navbar navbar-links';
+  }
+
+  scrolledPast() {
+    this.setState({
+      className: 'navbar navbar-fixed',
+    });
+  }
+
+  scrolledBackUp() {
+    this.setState({
       className: 'navbar navbar-links'
-    };
-  }
-
-  componentWillMount() {
-    document.addEventListener('scroll', this.onScroll);
-  }
-
-  componentWillUnmount() {
-    document.removeEventListener('scroll', this.onScroll);
-  }
-
-  onScroll() {
-    if (!this.state.scrolling) {
-      this.setState({scrolling: true});
-      setTimeout(this.handleScroll, this.SCROLL_INTERVAL);
-    }
-  }
-
-  handleScroll() {
-    if (document.body.scrollTop > document.documentElement.clientHeight) {
-      // user has scrolled past the header
-      if (!this.state.scrolledPast) {
-        console.log('Scrolled past.');
-        this.setState({
-          className: 'navbar navbar-fixed',
-          scrolledPast: true
-        });
-      }
-    } else {
-      // user has scrolled back to top
-      if (this.state.scrolledPast) {
-        console.log('Scrolled back up.');
-        this.setState({
-          scrolledPast: false,
-          className: 'navbar navbar-links'
-        });
-      }
-    }
-    this.setState({scrolling: false});
+    });
   }
 
   render() {
