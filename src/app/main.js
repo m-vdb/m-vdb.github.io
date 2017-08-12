@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
-import NavBar from '../navbar';
-import { workLinks, educationLinks } from './links';
+import NavBar from './navbar';
+import { workLinks, educationLinks } from './constants';
 import picture from '../img/picture.png';
 import arrow from '../img/arrow.svg';
 import '../stylesheets/main.css';
@@ -14,25 +14,7 @@ class App extends Component {
       <div className="main">
         <div className="header-background">
           <div className="header">
-            <div className="links">
-              <ul>
-                <li>
-                  <a href={profileLinks.email}>
-                    <img src={mailIcon} alt="Contact me" className="link-icon link-icon-email" />
-                  </a>
-                </li>
-                <li>
-                  <a href={profileLinks.github}>
-                    <img src={githubIcon} alt="Github" className="link-icon" />
-                  </a>
-                </li>
-                <li>
-                  <a href={profileLinks.linkedin}>
-                    <img src={linkedinIcon} alt="LinkedIn" className="link-icon" />
-                  </a>
-                </li>
-              </ul>
-            </div>
+            <NavBar />
             <img src={picture} className="header-picture" alt="Me" />
             <h2>Hello I'm Max</h2>
             <p>

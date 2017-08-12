@@ -85,23 +85,23 @@ h2 {
   width: 70px;
 }
 
-/* Header links */
+/* Navbar */
 
-.links {
+.navbar-links {
   text-align: right;
 }
 
-.links ul {
+.navbar-links ul {
   display: inline;
 }
 
-.links li {
+.navbar-links li {
   list-style: none;
   display: inline-block;
   margin-right: 20px;
 }
 
-.links li img {
+.navbar-links li img {
   vertical-align: middle;
 }
 
