@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
-import picture from './picture.png';
-import mailIcon from './mail.svg';
-import githubIcon from './github.svg';
-import linkedinIcon from './linkedin.svg';
-import arrow from './arrow.svg';
-import { profileLinks, workLinks, educationLinks } from './links';
-import './App.css';
+import NavBar from '../navbar';
+import { workLinks, educationLinks } from './links';
+import picture from '../img/picture.png';
+import arrow from '../img/arrow.svg';
+import '../stylesheets/main.css';
 
 
 class App extends Component {
