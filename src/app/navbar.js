@@ -21,11 +21,11 @@ class NavBar extends Component {
   }
 
   componentWillMount() {
-    document.onscroll = this.onScroll;
+    document.addEventListener('scroll', this.onScroll);
   }
 
   componentWillUnmount() {
-    document.onscroll = null;
+    document.removeEventListener('scroll', this.onScroll);
   }
 
   onScroll() {
