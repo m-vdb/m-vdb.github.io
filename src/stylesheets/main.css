@@ -169,6 +169,7 @@ h2 {
 .tab-list .tab-link.tab-link--image {
   padding: 0 10px;
   vertical-align: middle;
+  cursor: default;
 }
 
 .tab-list .tab-link.tab-link--image:hover {
