@@ -116,7 +116,6 @@ h2 {
 /* Main content */
 
 .content {
-  margin: 1% 20% 1%;
   text-align: justify;
   min-height: 100vh;
 }
@@ -124,39 +123,47 @@ h2 {
 /* Tabs */
 
 .tab-list {
-  text-align: center;
   padding: 0;
+  background-color: #287eff;
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 100%;
 }
 
 .tab-list .tab-link {
   list-style: none;
   display: inline-block;
-  border: 1px solid #287eff;
-  padding: 10px 30px;
+  padding: 15px 30px;
   cursor: pointer;
-  color: #287eff;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #287eff;
   margin: auto;
 }
 
-.tab-list .tab-link:first-child {
-  border-right: none;
-  border-radius: 5px 0 0 5px;
+.tab-list .tab-link.tab-link--selected, .tab-list .tab-link:hover {
+  background-color: #ffffff;
+  color: #287eff;
 }
 
-.tab-list .tab-link:last-child {
-  border-left: none;
-  border-radius: 0 5px 5px 0;
+.tab-list--fixed {
+  position: fixed;
+  top: 0;
 }
 
-.tab-list .tab-link:hover {
-  background-color: #287eff;
-  color: #ffffff;
+.react-tabs {
+  min-height: 95vh;
 }
 
-.tab-list .tab-link.tab-link--selected {
-  background-color: #287eff;
-  color: #ffffff;
+.react-tabs__tab-panel {
+  margin: 0 20% 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.react-tabs__tab-panel--selected {
+  min-height: 90vh;
+  margin-top: 68px;
 }
 
 /* Work section */
