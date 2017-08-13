@@ -66,3 +66,23 @@ class ScrollListenerComponent extends Component {
 }
 
 export { ScrollListenerComponent };
+
+
+export function scrollTo(y, scrollDuration) {
+    let cosParameter = y / 2;
+    let scrollCount = 0;
+    let oldTimestamp = performance.now();
+
+    function step (newTimestamp) {
+        scrollCount += Math.PI / (scrollDuration / (newTimestamp - oldTimestamp));
+        if (scrollCount >= Math.PI) {
+          window.scrollTo(0, y);
+          return;
+        }
+        if (window.scrollY === y) return;
+        window.scrollTo(0, Math.round(cosParameter + cosParameter * Math.sin(scrollCount)));
+        oldTimestamp = newTimestamp;
+        window.requestAnimationFrame(step);
+    }
+    window.requestAnimationFrame(step);
+};

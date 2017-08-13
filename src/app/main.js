@@ -2,12 +2,19 @@ import React, { Component } from 'react';
 
 import NavBar from './navbar';
 import TabBar from './tabbar';
+import { scrollTo } from './utils';
 import picture from '../img/picture.png';
 import arrow from '../img/arrow.svg';
 import '../stylesheets/main.css';
 
 
 class App extends Component {
+
+  constructor(props) {
+    super(props);
+    this.onArrowClick = this.onArrowClick.bind(this);
+  }
+
   render() {
     return (
       <div className="main">
@@ -21,7 +28,7 @@ class App extends Component {
               in <strong>Berlin, Germany</strong> or remote<br/>
               starting <strong>November 2017</strong>.
             </p>
-            <a href="#" className="header-arrow-container">
+            <a href="#" className="header-arrow-container" onClick={this.onArrowClick}>
               <img src={arrow} className="header-arrow" alt="Arrow" />
             </a>
           </div>
@@ -31,6 +38,10 @@ class App extends Component {
         </div>
       </div>
     );
+  }
+
+  onArrowClick() {
+    scrollTo(document.documentElement.clientHeight, 1000);
   }
 }
 
