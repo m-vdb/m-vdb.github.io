@@ -9,7 +9,6 @@ class TabBar extends ScrollListenerComponent {
 
   constructor(props) {
     super(props);
-    this.onTabSelect = this.onTabSelect.bind(this);
     this.state.className = 'tab-list';
   }
 
@@ -31,13 +30,9 @@ class TabBar extends ScrollListenerComponent {
     };
   }
 
-  onTabSelect() {
-    window.scrollTo(0, this.props.scrollThreshold);
-  }
-
   render() {
     return (
-      <Tabs selectedTabClassName="tab-link--selected" onSelect={this.onTabSelect}>
+      <Tabs selectedTabClassName="tab-link--selected">
         <TabList className={this.state.className} style={this.getStyle()}>
           <Tab className="tab-link">About Me</Tab>
           <Tab className="tab-link">Work</Tab>
