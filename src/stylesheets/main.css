@@ -166,6 +166,21 @@ h2 {
   margin-top: 68px;
 }
 
+.tab-list .tab-link.tab-link--image {
+  padding: 0 10px;
+  vertical-align: middle;
+}
+
+.tab-list .tab-link.tab-link--image:hover {
+  color: #ffffff;
+  background-color: #287eff;
+}
+
+.tab-link-picture {
+  height: 20px;
+  border-radius: 10px;
+}
+
 /* Work section */
 p.stack {
   font-style: italic;

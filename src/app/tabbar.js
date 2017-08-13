@@ -3,6 +3,7 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 import { workLinks, educationLinks } from './constants';
 import { ScrollListenerComponent } from './utils';
+import picture from '../img/picture.png';
 
 
 class TabBar extends ScrollListenerComponent {
@@ -34,6 +35,7 @@ class TabBar extends ScrollListenerComponent {
     return (
       <Tabs selectedTabClassName="tab-link--selected">
         <TabList className={this.state.className} style={this.getStyle()}>
+          <li className="tab-link tab-link--image"><img src={picture} className="tab-link-picture" alt="Me" /></li>
           <Tab className="tab-link">About Me</Tab>
           <Tab className="tab-link">Work</Tab>
           <Tab className="tab-link">Education</Tab>
