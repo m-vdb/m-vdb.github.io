@@ -11,7 +11,7 @@ class ScrollListenerComponent extends Component {
   };
 
   static defaultProps = {
-    scrollThreshold: document.documentElement.clientHeight
+    scrollThreshold: document.documentElement.clientHeight - 10
   };
 
   constructor(props) {
