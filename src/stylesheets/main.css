@@ -138,6 +138,7 @@ h2 {
   color: #ffffff;
   background-color: #287eff;
   margin: auto;
+  font-size: 1.4em;
 }
 
 .tab-list .tab-link.tab-link--selected, .tab-list .tab-link:hover {
