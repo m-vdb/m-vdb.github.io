@@ -63,7 +63,7 @@ class TabBar extends ScrollListenerComponent {
               We built the future of recruiting on social networks.
               I worked 5 years as a full-time employee and as my experience grew,
               I took more responsibilities, reaching the role of lead software architect.
-              I crafted and supervised a web stack serving 1M monthly active users.
+              I crafted and supervised a web stack serving 500k+ monthly active users.
               I collaborated with and mentored a team of 5+ engineers,
               while closely brainstorming and building user experiences with the product team.
             </p>
