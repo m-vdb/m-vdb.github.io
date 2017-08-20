@@ -129,6 +129,23 @@ h2 {
   width: 35px;
 }
 
+@media only screen and (max-device-width : 800px) {
+  .navbar-links {
+    text-align: center;
+  }
+  .navbar-links ul {
+    padding-left: 20px;
+  }
+
+  .link-icon {
+    width: 30px;
+  }
+
+  .link-icon.link-icon-email {
+    width: 40px;
+  }
+}
+
 /* Main content */
 
 .content {
