@@ -5,6 +5,18 @@ body {
   font-size: 12px;
 }
 
+@media only screen and (max-device-width : 568px) {
+  body {
+    font-size: 10px;
+  }
+}
+
+@media only screen and (max-device-width : 800px) {
+  body {
+    font-size: 11px;
+  }
+}
+
 *:focus {
     outline: none;
 }
