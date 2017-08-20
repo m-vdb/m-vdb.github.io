@@ -24,8 +24,8 @@ class App extends Component {
             <img src={picture} className="header-picture" alt="Me" />
             <h2>Hello I'm Max</h2>
             <p>
-              Looking for a full-time Software Engineer position <br/>
-              in <strong>Berlin, Germany</strong> or remote<br/>
+              Looking for a full-time Software Engineer position
+              in <strong>Berlin, Germany</strong> or remote
               starting <strong>November 2017</strong>.
             </p>
             <a href="#" className="header-arrow-container" onClick={this.onArrowClick}>
