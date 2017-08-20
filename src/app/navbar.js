@@ -12,13 +12,13 @@ class NavBar extends Component {
       <nav className="navbar navbar-links">
         <ul>
           <li>
-            <a href={profileLinks.email}>
-              <img src={mailIcon} alt="Contact me" className="link-icon link-icon-email" />
+            <a href={profileLinks.github}>
+              <img src={githubIcon} alt="Github" className="link-icon" />
             </a>
           </li>
           <li>
-            <a href={profileLinks.github}>
-              <img src={githubIcon} alt="Github" className="link-icon" />
+            <a href={profileLinks.email}>
+              <img src={mailIcon} alt="Contact me" className="link-icon link-icon-email" />
             </a>
           </li>
           <li>
