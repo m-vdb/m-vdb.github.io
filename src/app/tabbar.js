@@ -25,16 +25,10 @@ class TabBar extends ScrollListenerComponent {
     });
   }
 
-  getStyle() {
-    return {
-      opacity: this.state.scrollCompletion
-    };
-  }
-
   render() {
     return (
       <Tabs selectedTabClassName="tab-link--selected">
-        <TabList className={this.state.className} style={this.getStyle()}>
+        <TabList className={this.state.className}>
           <li className="tab-link tab-link--image"><img src={picture} className="tab-link-picture" alt="Me" /></li>
           <Tab className="tab-link">About Me</Tab>
           <Tab className="tab-link">Work</Tab>
