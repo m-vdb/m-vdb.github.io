@@ -1,33 +1,15 @@
-import React from 'react';
+import React, { Component } from 'react';
 
 import { profileLinks } from './constants';
-import { ScrollListenerComponent } from './utils';
 import mailIcon from '../img/mail.svg';
 import githubIcon from '../img/github.svg';
 import linkedinIcon from '../img/linkedin.svg';
 
-class NavBar extends ScrollListenerComponent {
-
-  constructor(props) {
-    super(props);
-    this.state.className = 'navbar navbar-links';
-  }
-
-  scrolledPast() {
-    this.setState({
-      className: 'navbar navbar-fixed',
-    });
-  }
-
-  scrolledBackUp() {
-    this.setState({
-      className: 'navbar navbar-links'
-    });
-  }
+class NavBar extends Component {
 
   render() {
     return (
-      <nav className={this.state.className}>
+      <nav className="navbar navbar-links">
         <ul>
           <li>
             <a href={profileLinks.email}>
