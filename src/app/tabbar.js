@@ -68,22 +68,6 @@ class TabBar extends ScrollListenerComponent {
           </section>
           <section>
             <h5>
-              Co-Founder - <a href={workLinks.ethic}>Ethic</a> -
-              May 2015 / Apr. 2016 - San Francisco
-            </h5>
-            <p>
-              We created a blockchain-based insurance product with the very early-stage Ethereum technology.
-              I was responsible for the product elaboration and the engineering conception.
-              Building a product on top of Ethereum was very interesting and challenging.
-              The project ended because of different life trajectories
-              (my co-founder wanted to go back to Europe).
-            </p>
-            <p className="stack">
-              Stack: NodeJS, Marionette, CoffeeScript, MongoDB, Redis, Solidity, Docker.
-            </p>
-          </section>
-          <section>
-            <h5>
               Co-Founder - <a href={workLinks.houseofgigs}>House of gigs</a> -
               Jun. 2016 / Now - San Francisco
             </h5>
@@ -96,6 +80,22 @@ class TabBar extends ScrollListenerComponent {
             </p>
             <p className="stack">
               Stack: Python, Django, React Native, Dokku, PostgreSQL, Redis, Realm, Algolia, AWS, Datadog, Sentry.
+            </p>
+          </section>
+          <section>
+            <h5>
+              Co-Founder - <a href={workLinks.ethic}>Ethic</a> -
+              May 2015 / Apr. 2016 - San Francisco
+            </h5>
+            <p>
+              We created a blockchain-based insurance product with the very early-stage Ethereum technology.
+              I was responsible for the product elaboration and the engineering conception.
+              Building a product on top of Ethereum was very interesting and challenging.
+              The project ended because of different life trajectories
+              (my co-founder wanted to go back to Europe).
+            </p>
+            <p className="stack">
+              Stack: NodeJS, Marionette, CoffeeScript, MongoDB, Redis, Solidity, Docker.
             </p>
           </section>
         </TabPanel>
