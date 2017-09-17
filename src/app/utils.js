@@ -42,7 +42,7 @@ class ScrollListenerComponent extends Component {
   }
 
   handleScroll() {
-    const scrollPosition = document.body.scrollTop;
+    const scrollPosition = document.documentElement.scrollTop;
     const scrollCompletion = Math.min(scrollPosition, this.props.scrollThreshold) / this.props.scrollThreshold;
     if (scrollPosition > this.props.scrollThreshold) {
       // user has scrolled past the header
