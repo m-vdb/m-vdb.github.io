@@ -1,5 +1,5 @@
 export const profileLinks = {
-  email: 'mailto:getmax0@gmail.com',
+  email: 'mailto:max@houseofgigs.io',
   github: 'https://github.com/m-vdb',
   linkedin: 'https://linkd.in/1alUxp3'
 };

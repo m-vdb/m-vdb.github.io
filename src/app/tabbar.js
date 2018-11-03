@@ -30,24 +30,27 @@ class TabBar extends ScrollListenerComponent {
       <Tabs selectedTabClassName="tab-link--selected">
         <TabList className={this.state.className}>
           <li className="tab-link tab-link--image"><img src={picture} className="tab-link-picture" alt="Me" /></li>
-          <Tab className="tab-link">About Me</Tab>
           <Tab className="tab-link">Work</Tab>
           <Tab className="tab-link">Education</Tab>
         </TabList>
 
         <TabPanel>
           <section>
+            <h5>
+              Co-Founder & CEO - <a href={workLinks.houseofgigs}>House of gigs</a> -
+              Jun. 2016 / Now - San Francisco
+            </h5>
             <p>
-              I’m a passionate full-stack software engineer.
-              Building projects with purpose drives me.
-              I’m a fast learner and a doer who is not afraid of quickly bootstrapping code to embrace changes.
-              Rigor is my leitmotiv: if my code is not tested, then it’s not ready.
-              If it is not documented, then it’s not ready.
-              I’m ready for my next challenge. <span role="img" aria-label="Rocket">🚀</span>
+              We are building a platform that brings gig-economy workers together,
+              help them find new opportunities and provide them with tailored services.
+              I am responsible for the product development and engineering.
+              I also take part in a lot of founder-specific tasks such as user acquisition and retention.
+              The iOS app is available on the <a href={workLinks.houseofgigsApp}>US App store</a>.
+            </p>
+            <p className="stack">
+              Stack: Python, Django, React Native, Dokku, PostgreSQL, Redis, Realm, Algolia, AWS, Datadog, Sentry.
             </p>
           </section>
-        </TabPanel>
-        <TabPanel>
           <section>
             <h5>
               Lead Software Architect - <a href={workLinks.work4}>Work4</a> -
@@ -64,22 +67,6 @@ class TabBar extends ScrollListenerComponent {
             <p className="stack">
               Stack: Python, Django, MySQL, MongoDB, ElasticSearch, Redis,
               Celery, Chef, Gherkin testing, Redshift, AWS.
-            </p>
-          </section>
-          <section>
-            <h5>
-              Co-Founder - <a href={workLinks.houseofgigs}>House of gigs</a> -
-              Jun. 2016 / Now - San Francisco
-            </h5>
-            <p>
-              We are building a platform that brings gig-economy workers together,
-              help them find new opportunities and provide them with tailored services.
-              I am responsible for the product development and engineering.
-              I also take part in a lot of founder-specific tasks such as user acquisition and retention.
-              The iOS app is available on the <a href={workLinks.houseofgigsApp}>US App store</a>.
-            </p>
-            <p className="stack">
-              Stack: Python, Django, React Native, Dokku, PostgreSQL, Redis, Realm, Algolia, AWS, Datadog, Sentry.
             </p>
           </section>
           <section>
